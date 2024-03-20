@@ -2,5 +2,5 @@
 # Node modules
 node_modules/
 
-# Compiled output
-*.draft.html
+# Ignoring files
+draft.html
