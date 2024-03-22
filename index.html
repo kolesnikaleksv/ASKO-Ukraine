@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Дизайн-проект, частный интерьер, общественный интерьре, жилые дома, коттеджи, общественные здания и сооружения, архитектура и дизайн.">
+    <meta name="keywords" content="Дизайн-проект интерьера, частный интерьер, эскиз гостиной, гостиная, спальня, кухня-студия, рабочий проект перепланировки квартиры, разработка эскиза-идеи, эксклюзивный интерьер, проект и согласование, визуализация, дизайн санузла, ванная комната, современный интерьер, стильное решение гостиной, проект реконструкции, интерьер коттеджа, жилой дом, макет интерьера, архитектурный макет, дизайн-студия, архитектурная мастерская, декорирование интерьера офиса, проект офиса, дизайн офиса, интерьер ресторана, стильный дизайн кофейни, бары, жилые дома, фасады, проектирование общественных центров, разработка эскиза-идеи , дизайн стиля, стилевое решение бренда фирмы, дизайн освещения, потолки из гипсокартона, новые идеи.">
+    <meta name="author" content="ACKO-Ukraine">
     <link rel="shortcut icon" href="./images/icons/favicon.ico">
     <title>ASKO Main page</title>
     <link
@@ -17,7 +20,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body id="body">
     <div class="wrapper">
@@ -33,21 +36,17 @@
               >
                 ASKO - Ukraine
               </a>
-              <div class="navbar-controls">
-                <i role="button" class="btn-menu" aria-label="Close Menu">
-                  <span class="material-symbols-outlined"> search </span>
+                <i role="button" class="btn-menu open" aria-label="Open Menu">
+                  <span class="material-symbols-outlined open-icon" > menu </span>
+                  <span class="material-symbols-outlined close-icon">close</span>
                 </i>
-                <i role="button" class="btn-menu" aria-label="Close Menu">
-                  <span class="material-symbols-outlined"> menu </span>
-                </i>
-              </div>
             </div>
           </nav>
         </div>
       </header>
       <div class="main">
         <div class="main-slider">
-          <img src="./images/main proj.jpg" alt="" />
+          <img src="./images/main proj.webp" alt="main image" />
         </div>
         <div class="content">
           <div class="container">
@@ -315,6 +314,72 @@
         </footer>
       </div>
     </div>
-    <script src="script.js"></script>
+
+  <div
+  role="dialog"
+  tabindex="-1"
+  aria-modal="true"
+  class="menu-overlay offcanvas offcanvas-end show"
+  style="visibility: visible"
+  ><div class="offcanvas-body">
+    <div class="menu-left-side"></div>
+    <div class="offcanvas-content">
+      <div class="body">
+        <div class="menu-title">Menu</div>
+          <ul class="navbar-drop-menu">
+              <li class="drop-nav-item">
+                <a
+                  aria-current="page"
+                  class="drop-nav-link"
+                  href="./projects.html"
+                  aria-label="Projects"
+                  >
+                  Projects
+                </a>
+              </li>
+              <li class="drop-nav-item">
+                <a
+                  aria-current="page"
+                  class="drop-nav-link"
+                  href="./realization.html"
+                  aria-label="Implementations"
+                  >Implementations</a
+                >
+              </li>
+              <li class="drop-nav-item">
+                <a
+                  aria-current="page"
+                  class="drop-nav-link text-white"
+                  href="./models.html"
+                  aria-label="Models"
+                  >Models</a
+                >
+              </li>
+              <li class="drop-nav-item">
+                <a
+                  aria-current="page"
+                  class="drop-nav-link"
+                  href="./Public.html"
+                  aria-label="Publications"
+                  >Publications</a
+                >
+              </li>
+              <li class="drop-nav-item">
+                <a
+                  aria-current="page"
+                  class="drop-nav-link"
+                  href="./partners.html"
+                  aria-label="Our services"
+                  >Our services</a
+                >
+              </li>
+          </ul>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
