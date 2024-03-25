@@ -57,11 +57,9 @@ body {
   z-index: 1001;
   background-color: transparent;
 }
-
 .header:not(.active):hover {
   background-color: #1a1a1a;
 }
-
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -229,24 +227,18 @@ h1 {
 
 /* menu */
 .menu-overlay {
+  display: none;
   top: 0;
   right: 0;
   width: 100%;
-
   position: fixed;
   bottom: 0;
   z-index: 900;
-  /* display: flex; */
   flex-direction: column;
   max-width: 100%;
   visibility: visible;
-  /* visibility: hidden;
-  background-color: #fff; */
   background-clip: padding-box;
   outline: 0;
-  /* transition: transform .3s ease-in-out; */
-
-  display: none;
 }
 .offcanvas-body {
   display: flex;
@@ -254,9 +246,8 @@ h1 {
   flex-grow: 1;
 }
 .offcanvas-content {
-  max-width: 67vw;
-  min-width: 67vw;
-
+  max-width: 100%;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -269,7 +260,7 @@ h1 {
 .menu-left-side {
   height: 100vh;
   overflow: hidden;
-  width: 33%;
+  width: 0%;
 }
 .body {
   margin-top: 6.25rem;
@@ -282,9 +273,6 @@ h1 {
 .navbar-drop-menu {
   color:  black;
 }
-.drop-nav-item {
-
-}
 .drop-nav-item>a {
   font-size: calc(1.33125rem + .975vw);
   font-weight: 500;
@@ -294,7 +282,22 @@ h1 {
 .drop-nav-item>a:hover {
   color: #ccc;
 }
-
+.menu-footer-rights {
+  padding-top: 20px;
+  text-align: left;
+  color: #9A9A9A;
+  font-size: 16px;
+}
+.menu-social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  text-align: left;
+}
+.menu-active {
+  color: #000000;
+  font-weight: 600;
+}
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
@@ -329,6 +332,16 @@ h1 {
   .container > p {
     font-size: 1.25em;
   }
+  .offcanvas-content {
+    max-width: 67%;
+    min-width: 67%;
+  }
+  .menu-left-side {
+    width: 33%;
+  }
+  .navbar-brand {
+    color: #ffffff;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -353,6 +366,13 @@ h1 {
   }
   .footer-rights {
     text-align: right;
+  }
+  .offcanvas-content {
+    max-width: 50%;
+    min-width: 50%;
+  }
+  .menu-left-side {
+    width: 50%;
   }
 }
 @media (min-width: 1200px) {

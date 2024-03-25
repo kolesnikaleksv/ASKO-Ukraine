@@ -8,26 +8,23 @@ const scrollHandle = () => {
   }
   prevScrollPos = currentScrollPos;
 };
+
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
 };
-document.querySelector(".back-to-top").addEventListener("click", scrollToTop);
-const sayHi = () => {
-  console.log('hello')
-}
 
 function toggleMenu() {
-  
   if(this.classList.contains('active')) {
     this.classList.remove('active');
-    document.querySelector('.header').classList.remove('active')
+    document.querySelector('.header').classList.remove('active');
     document.querySelector('.close-icon').style.display = 'none';
     document.querySelector('.open-icon').style.display = 'block';
     document.querySelector('.menu-overlay').style.display = 'none';
-    document.getElementById('body').classList.remove('stop-scrolling')
+    document.getElementById('body').classList.remove('stop-scrolling');
+    document.querySelector('.navbar-brand').classList.remove('menu-active');
   } else {
     this.classList.add('active');
     document.querySelector('.header').classList.add('active');
@@ -35,11 +32,11 @@ function toggleMenu() {
     document.querySelector('.close-icon').style.display = 'block';
     document.querySelector('.open-icon').style.display = 'none';
     document.querySelector('.menu-overlay').style.display = 'flex';
-    document.getElementById('body').classList.add('stop-scrolling')
-
+    document.getElementById('body').classList.add('stop-scrolling');
+    document.querySelector('.navbar-brand').classList.add('menu-active');
   }
-}
+};
+
+document.querySelector(".back-to-top").addEventListener("click", scrollToTop);
 document.querySelector(".btn-menu").addEventListener("click", toggleMenu)
-
-
 window.onscroll = scrollHandle;
