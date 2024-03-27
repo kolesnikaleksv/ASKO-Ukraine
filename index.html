@@ -20,6 +20,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body id="body">
@@ -45,22 +49,93 @@
         </div>
       </header>
       <div class="main">
-        <div class="fool-screen">
-          <div class="fool-screen__body">
-            <div class="fool-screen__title">ACKO-Ukraine</div>
-            <div class="fool-screen__description">Architectural company</div>
+        <div class="fool-screen-slider">
+          <div class="swiper-wrapper">
+            <a href="./projects.html" class="swiper-slide">
+              <div class="fool-screen__body">
+                <div class="fool-screen__title">Our projects</div>
+                <div class="fool-screen__description">Architectural company</div>
+              </div>
+              <video
+                preload="auto"
+                loop
+                muted
+                autoplay
+                poster="./images/home_10s.webp"
+                class="fool-screen__video"
+                >
+                <source src="./video/house_10s.webm" type="video/webm">
+                <source src="./video/house_10s.mp4" type="video/mp4">
+              </video>
+            </a>
+            <a href="./realization.html" class="swiper-slide">
+              <div class="fool-screen__body">
+                <div class="fool-screen__title">Implementations</div>
+                <div class="fool-screen__description">Architectural company</div>
+              </div>
+              <video
+                preload="auto"
+                loop
+                muted
+                autoplay
+                poster="./images/Prev_lake.webp"
+                class="fool-screen__video"
+                >
+                <source src="./video/lake.webm" type="video/webm">
+                <source src="./video/lake.mp4" type="video/mp4">
+              </video>
+            </a>
+            <a href="./models.html" class="swiper-slide">
+              <div class="fool-screen__body">
+                <div class="fool-screen__title">Models</div>
+                <div class="fool-screen__description">Architectural company</div>
+              </div>
+              <video
+                preload="auto"
+                loop
+                muted
+                autoplay
+                poster="./images/Prev_lake.webp"
+                class="fool-screen__video"
+                src="./video/landscape.mp4"
+                >
+              </video>
+            </a>
+            <a href="./Public.html" class="swiper-slide">
+              <div class="fool-screen__body">
+                <div class="fool-screen__title">Publications</div>
+                <div class="fool-screen__description">Architectural company</div>
+              </div>
+              <video
+                preload="auto"
+                loop
+                muted
+                autoplay
+                poster="./images/Prev_lake.webp"
+                class="fool-screen__video"
+                src="./video/molting.mp4"
+                >
+              </video>
+            </a>
+            <a href="./partners.html" class="swiper-slide">
+              <div class="fool-screen__body">
+                <div class="fool-screen__title">Our services</div>
+                <div class="fool-screen__description">Architectural company</div>
+              </div>
+              <video
+                preload="auto"
+                loop
+                muted
+                autoplay
+                poster="./images/home_10s.webp"
+                class="fool-screen__video"
+                >
+                <source src="./video/house_10s.webm" type="video/webm">
+                <source src="./video/house_10s.mp4" type="video/mp4">
+              </video>
+            </a>
+            <div class="swiper-pagination"></div>
           </div>
-          <video
-            preload="auto"
-            loop
-            muted
-            autoplay
-            poster="./images/Prev_lake.webp"
-            class="fool-screen__video"
-            >
-            <source src="./video/lake.webm" type="video/webm">
-            <source src="./video/lake.mp4" type="video/mp4">
-          </video>
         </div>
         <div class="content">
           <div class="container">
@@ -88,50 +163,6 @@
               To learn more about our work, we invite you to visit our website in the relevant sections.
             </p>
           </div>
-          <!-- <div class="container">
-            <h1>
-              "АСКО-Україна" - архітектурно-будівельна компанія з Харкова.
-            </h1>
-
-            <p>
-              Ми пропонуємо широкий спектр послуг в галузі архітектури,
-              створення дизайн-проектів та архітектурного проектування споруд
-              різного призначення. Від однокімнатних квартир та приватних
-              будинків до великих громадських споруд. Від розробки ескізу до
-              детального робочого проекту з подальшою його реалізацією під ключ.
-            </p>
-
-            <p>
-              Наша макетна майстерня створить для вас макети будь-якої
-              складності з різних матеріалів. Професійний макет - це не лише
-              невід'ємна частина сучасного робочого проекту, але й, в умовах
-              сучасної конкуренції, - престиж організації.
-            </p>
-
-            <p>
-              Реалізація наших проектів здійснюється в строгому відповідності з
-              технічною документацією та з використанням найсучасніших
-              матеріалів і технологій, включаючи наші власні розробки, що
-              дозволяють не лише знизити кількість людино-годин, необхідних для
-              виконання оздоблювальних робіт, а й зекономити значну кількість
-              будівельних матеріалів при постійно високій якості робіт будь-якої
-              складності проекту.
-            </p>
-
-            <p>
-              На даний момент наша компанія має у своєму арсеналі велику
-              кількість реалізованих об'єктів безпосередньо компанією, об'єктів,
-              у розробці яких брали участь наші архітектори, а також декілька
-              десятків робочих і ескізних проектів, частина з яких зараз
-              знаходиться в реалізації. Велика кількість професійних макетів,
-              які демонструвалися на українських та міжнародних виставках.
-            </p>
-
-            <p>
-              Детальніше ознайомитися з нашими роботами ми пропонуємо на нашому
-              веб-сайті у відповідних розділах.
-            </p>
-          </div> -->
         </div>
       </div>
       <div class="container">
@@ -516,6 +547,7 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

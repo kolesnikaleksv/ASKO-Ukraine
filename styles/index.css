@@ -110,36 +110,50 @@ body {
   height: 100%;
   width: 100%;
 }
-.fool-screen {
+.fool-screen-slider {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 .fool-screen__body {
   position: relative;
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: start;
   z-index: 2;
   text-transform: uppercase;
   padding: 15px;
   background-color: #00000051;
   width: 100%;
+
+  height: 100%;
+  justify-content: end;
+  color: #ffffff;
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 20px;
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: #ffffff;
+  height: 5px;
+  width: 5px;
+  margin: 0 12px;
 }
 .fool-screen__title {
-  font-size: 50px;
-  letter-spacing: 13px;
+  font-size: 24px;
+  letter-spacing: 8px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 .fool-screen__description {
   font-size: 18px;
   letter-spacing: 8px;
+  margin-bottom: 50px;
 }
 .fool-screen__video {
   position: absolute;
@@ -253,10 +267,8 @@ h1 {
   text-align: left;
   color: #9A9A9A;
   font-size: 16px;
-
   grid-area: footer-rights;
 }
-
 /* menu */
 .menu-overlay {
   display: none;
@@ -355,8 +367,12 @@ h1 {
   .navbar-brand {
     font-size: 24px;
   }
+  .fool-screen__body {
+    align-items: center;
+  }
   .fool-screen__title {
-    letter-spacing: 25px;
+    letter-spacing: 12px;
+    font-size: 40px;
   }
   .fool-screen__description {
     letter-spacing: 10px;
@@ -384,7 +400,11 @@ h1 {
 @media (min-width: 992px) {
   .container {
     padding: 0 40px;
-  } 
+  }
+  .fool-screen__title {
+    letter-spacing: 25px;
+    font-size: 50px;
+  }
 }
 @media (min-width: 1064px) {
   .footer {

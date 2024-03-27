@@ -40,3 +40,16 @@ function toggleMenu() {
 document.querySelector(".back-to-top").addEventListener("click", scrollToTop);
 document.querySelector(".btn-menu").addEventListener("click", toggleMenu)
 window.onscroll = scrollHandle;
+
+const swiper = new Swiper('.fool-screen-slider', {
+  loop: true,
+  autoplay: {
+    delay: 10000,
+  },
+  effect: "fade",
+  speed: 200,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
