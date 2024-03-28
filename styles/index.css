@@ -29,8 +29,6 @@ h6 {
 html,
 body {
   background: #1a1a1a;
-  font-family: "Roboto", sans-serif;
-
   height: 100%;
   color: #ffffff;
 }
@@ -57,9 +55,6 @@ body {
 .header.active {
   z-index: 1001;
   background-color: transparent;
-}
-.header:not(.active):hover {
-  background-color: #1a1a1a;
 }
 .navbar {
   display: flex;
@@ -94,10 +89,6 @@ body {
 .btn-menu.active {
   background-color: #000000;
   color: #ffffff;
-}
-.btn-menu:not(.active):hover {
-  background-color: #ffffff;
-  color: #000000;
 }
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
@@ -135,14 +126,11 @@ body {
   justify-content: end;
   color: #ffffff;
 }
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 20px;
-}
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   background-color: #ffffff;
   height: 5px;
   width: 5px;
-  margin: 0 12px;
+  margin: 18px;
 }
 .fool-screen__title {
   font-size: 24px;
@@ -307,7 +295,7 @@ h1 {
   width: 0%;
 }
 .body {
-  margin-top: 6.25rem;
+  margin-top: 5.25rem;
   display: flex;
   flex-direction: column;
 }
@@ -396,6 +384,9 @@ h1 {
   .navbar-brand {
     color: #ffffff;
   }
+  .body {
+    margin-top: 6.25rem;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -404,6 +395,18 @@ h1 {
   .fool-screen__title {
     letter-spacing: 25px;
     font-size: 50px;
+  }
+  .btn-menu:not(.active):hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .header:not(.active):hover {
+    background-color: #1a1a1a;
+  }
+  .nav-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-underline-position: above;
   }
 }
 @media (min-width: 1064px) {
