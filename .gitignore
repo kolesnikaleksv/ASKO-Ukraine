@@ -1,6 +1,7 @@
 
 # Node modules
 node_modules/
+video/
 
 # Ignoring files
 draft.html

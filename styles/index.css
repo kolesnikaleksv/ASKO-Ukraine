@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Nebulosa Black Display Solid';
+  src: url('../fonts/NebulosaBlackDisplaySolid.eot');
+  src: url('../fonts/NebulosaBlackDisplaySolid.woff') format('woff'),
+       url('../fonts/NebulosaBlackDisplaySolid.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Prototype Daymarius';
+  src: url('../fonts/Daymarino.eot');
+  src: url('../fonts/Daymarino.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Daymarino.woff2') format('woff2'),
+       url('../fonts/Daymarino.woff') format('woff'),
+       url('../fonts/Daymarino.ttf')  format('truetype'),
+       url('../fonts/Daymarino.svg#Prototype [RUS by Daymarius]') format('svg');
+}
 *,
 *::after,
 *::before {
@@ -28,6 +43,7 @@ h6 {
 }
 html,
 body {
+  font-family: 'Prototype Daymarius';
   background: #1a1a1a;
   height: 100%;
   color: #ffffff;
@@ -71,8 +87,10 @@ body {
   width: 100%;
 }
 .navbar-brand {
+  font-family: 'Nebulosa Black Display Solid';
   font-size: 20px;
   color: #ffffff;
+  text-transform: uppercase;
 }
 .btn-menu {
   display: flex;
@@ -117,11 +135,9 @@ body {
   flex-direction: column;
   align-items: start;
   z-index: 2;
-  text-transform: uppercase;
   padding: 15px;
   background-color: #00000051;
   width: 100%;
-
   height: 100%;
   justify-content: end;
   color: #ffffff;
@@ -133,14 +149,36 @@ body {
   margin: 18px;
 }
 .fool-screen__title {
-  font-size: 24px;
-  letter-spacing: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  letter-spacing: 2px;
   font-weight: 700;
-  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.fool-screen__title-uk {
+  text-transform: uppercase;
+}
+.fool-screen__title-en {
+  font-family: "Nebulosa Black Display Solid";
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: none;
+
+}
+.fool-screen__title-slash {
+  font-family: "Nebulosa Black Display Solid";
+  margin-left: 10px;
+}
+.fool-screen__subtitle {
+  font-size: 10px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 .fool-screen__description {
-  font-size: 18px;
-  letter-spacing: 8px;
+  font-size: 10px;
   margin-bottom: 50px;
 }
 .fool-screen__video {
@@ -170,7 +208,6 @@ h1 {
   margin-bottom: 0.83em;
   margin-left: 0;
   margin-right: 0;
-  font-weight: bold;
 }
 .footer {
   border-top: 1px dotted #6c757d;
@@ -305,6 +342,27 @@ h1 {
 .navbar-drop-menu {
   color:  black;
 }
+.navbar-drop-menu__title {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.navbar-drop-menu__title-uk {
+  font-size: 20px;
+  width: 110px;
+}
+.navbar-drop-menu__title-slash {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.navbar-drop-menu__title-en {
+  font-family: 'Nebulosa Black Display Solid';
+  font-size: 12px;
+  font-weight: normal;
+}
 .drop-nav-item>a {
   font-size: calc(1.33125rem + .975vw);
   font-weight: 500;
@@ -359,11 +417,19 @@ h1 {
     align-items: center;
   }
   .fool-screen__title {
-    letter-spacing: 12px;
     font-size: 40px;
   }
+  .fool-screen__subtitle {
+    font-size: 22px;
+  }
+  .fool-screen__title-slash {
+    margin-left: 10px;
+  }
   .fool-screen__description {
-    letter-spacing: 10px;
+    font-size: 12px;
+  }
+  .fool-screen__title-en {
+    font-size: 22px;
   }
 }
 @media (min-width: 768px) {
@@ -393,7 +459,6 @@ h1 {
     padding: 0 40px;
   }
   .fool-screen__title {
-    letter-spacing: 25px;
     font-size: 50px;
   }
   .btn-menu:not(.active):hover {

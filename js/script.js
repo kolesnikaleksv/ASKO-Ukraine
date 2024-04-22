@@ -43,11 +43,35 @@ window.onscroll = scrollHandle;
 
 const swiper = new Swiper('.fool-screen-slider', {
   loop: true,
+  autoplay: true,
   autoplay: {
-    delay: 10000,
+    delay: 5000,
   },
+
   effect: "fade",
-  speed: 200,
+  
+  // effect: "creative",
+  //     creativeEffect: {
+  //       prev: {
+  //         shadow: true,
+  //         translate: [0, 0, -400],
+  //       },
+  //       next: {
+  //         translate: ["100%", 0, 0],
+  //       },
+  //     },
+
+  // effect: 'flip',
+
+  // effect: "cube",
+  // grabCursor: true,
+  // cubeEffect: {
+  //   shadow: true,
+  //   slideShadows: true,
+  //   shadowOffset: 20,
+  //   shadowScale: 0.94
+  // },
+
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
