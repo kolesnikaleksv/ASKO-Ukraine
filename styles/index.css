@@ -291,8 +291,11 @@ h1 {
 .footer-rights {
   text-align: left;
   color: #9A9A9A;
-  font-size: 16px;
+  font-size: 12px;
   grid-area: footer-rights;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 /* menu */
 .menu-overlay {
@@ -376,7 +379,7 @@ h1 {
   padding-top: 20px;
   text-align: left;
   color: #9A9A9A;
-  font-size: 16px;
+  font-size: 14px;
 }
 .menu-social-media {
   display: flex;
