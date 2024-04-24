@@ -43,9 +43,16 @@ window.onscroll = scrollHandle;
 
 const swiper = new Swiper('.fool-screen-slider', {
   loop: true,
-  autoplay: {
-    delay: 5000,
+  speed: 600,
+  effect: 'cube',
+  grabCursor: true,
+  cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 50,
+    shadowScale: 0.3,
   },
+  autoplay: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
